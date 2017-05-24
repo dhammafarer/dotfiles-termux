@@ -1,0 +1,81 @@
+# commands
+alias ll="ls -lah"
+
+# files
+alias zshrc="vim ~/.zshrc"
+alias vimrc="vim ~/.vimrc"
+alias tmuxconf="vim ~/.tmux.conf"
+
+# Git Stuff
+alias ga="git add"
+alias gaa="git add ."
+alias gc="git commit -m"
+alias gch="git checkout"
+alias gp="git push"
+alias gpgh="git push github"
+alias gph="git push heroku"
+alias gst="git status"
+alias glog="git log"
+alias gcl="git clone"
+alias nah="git reset --hard; git clean -dif;"
+alias gic="git init && gaa && gc 'initial commit'"
+
+# Heroku
+alias ho="heroku open"
+
+#applications
+alias vpi="vim +PluginInstall +qall"
+
+##DEVELOPMENT
+#yarn
+alias yi="yarn init -y"
+alias ya="yarn add"
+alias yad="yarn add --dev"
+alias yr="yarn remove"
+
+#bundler
+alias bini="bundle init"
+alias bi="bundle install"
+alias bu="bundle update"
+alias be="bundle exec"
+alias beg="bundle exec guard"
+alias bgr="bundle exec guard init rspec"
+
+#rails
+alias rs="rails server"
+alias rc="rails console"
+alias rcs="rails console --sandbox"
+alias rr="rails routes"
+alias rg="rails generate"
+alias rgc="rails generate controller"
+alias rgm="rails generate model"
+alias rgmig="rails generate migration"
+alias rdm="rails db:migrate"
+alias rdtp="rails db:test:prepare"
+alias rds="rails db:seed"
+alias mvscss="mv ./app/assets/stylesheets/application.css ./app/assets/stylesheets/application.scss"
+
+## add rails gems
+alias grspec="echo 'gem \"rspec\"'"
+alias grspecr="echo 'gem \"rspec-rails\", :group => [:development, :test]' >> Gemfile"
+alias gcapy="echo 'gem \"capybara\", :group => [:development, :test]' >> Gemfile"
+alias gfgr="echo 'gem \"factory_girl_rails\", :group => [:development, :test]' >> Gemfile"
+alias gdatc="echo 'gem \"database_cleaner\", :group => [:development, :test]' >> Gemfile"
+alias gguard="echo 'gem \"guard-rspec\", require: false, :group => [:development]' >> Gemfile"
+alias rspec-suite="grspecr && gcapy && gfgr && gdatc gguard"
+
+#elixir
+#iex
+alias ism="iex -S mix"
+
+#mix
+alias mdg="mix deps.get"
+##mix.phoenix
+alias mpn="mix phoenix.new"
+alias mpr="mix phoenix.routes"
+alias mps="mix phoenix.server"
+alias mpgh="mix phoenix.gen.html"
+##mix.ecto
+alias mec="mix ecto.create"
+alias megm="mix ecto.gen.migration"
+alias mem="mix ecto.migrate"
