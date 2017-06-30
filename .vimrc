@@ -34,7 +34,7 @@ Plugin 'mxw/vim-jsx'
 Plugin 'elixir-lang/vim-elixir'
 Plugin 'slashmili/alchemist.vim'
 Plugin 'vimwiki/vimwiki'
-Plugin 'powerline/powerline'
+Plugin 'powerline/powerline', { 'rtp': 'powerline/bindings/vim' }
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -128,7 +128,7 @@ let g:ycm_key_list_select_completion=['<Down>']
 "
 " Set ultisnips triggers
 let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<c-cr>"
+let g:UltiSnipsJumpForwardTrigger="<C-b>"
 let g:UltiSnipsEditSplit="vertical"
 
 let g:UltiSnipsSnippetsDir="~/.vim/UltiSnips"
@@ -183,7 +183,6 @@ nnoremap <Leader>e :e <C-R>=expand('%:p:h') . '/'<CR>
 
 "backup dirs
 set undodir=~/.vim/.undo//
-set backupdir=~/.vim/.backup//
 set directory=~/.vim/.swp//
 set nobackup
 set noswapfile

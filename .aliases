@@ -5,6 +5,9 @@ alias ll="ls -lah"
 alias zshrc="vim ~/.zshrc"
 alias vimrc="vim ~/.vimrc"
 alias tmuxconf="vim ~/.tmux.conf"
+alias aliases="vim ~/.aliases"
+alias snip="vim ~/.vim/UltiSnips/"
+alias code="cd ~/Code"
 
 # Git Stuff
 alias ga="git add"
